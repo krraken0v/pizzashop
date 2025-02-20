@@ -1,0 +1,74 @@
+* {
+  font-family: "Nunito";
+}
+
+.optionscontainer {
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 0 20px;
+}
+
+.buttonscontainer {
+  width: 830px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.optionsbutton {
+  width: 136px;
+  height: 36px;
+  border-radius: 30px;
+  color: #111;
+  padding-top: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.49px;
+  transition: 0.5s;
+  text-align: center;
+  margin-right: 20px;
+}
+.active {
+  width: 136px;
+  height: 36px;
+  border-radius: 30px;
+  padding-top: 15px;
+  background: #111;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.49px;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.05px;
+}
+
+.selectpop {
+  color: rgb(254, 95, 30);
+  text-decoration: underline;
+  border: none;
+}
+
+.allpizza {
+  height: 100px;
+  padding: 0px 20px;
+  background: #fff;
+}
+
+.allpizzatitle {
+  margin: 0;
+}/*# sourceMappingURL=Options.module.css.map */
