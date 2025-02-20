@@ -1,0 +1,22 @@
+.notfoundcontainer {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+.notfoundcontainer img {
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+.notfoundcontainer h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+.notfoundcontainer h3 {
+  margin: 0;
+  text-align: center;
+  color: rgba(62, 60, 60, 0.8588235294);
+  margin-top: 20px;
+}/*# sourceMappingURL=NotFound.module.css.map */

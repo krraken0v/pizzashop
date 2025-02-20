@@ -1,7 +1,10 @@
 import PizzaBlock from './Pizzablock.module/Pizzablock.module'
 import Header from './Header/ReactPizzaLogo.main'
 import Options from './Options/Options.main'
+import { Route,Routes } from 'react-router'
 import Skeleton from './Pizzablock.module/Skeleton'
+import { Link } from 'react-router'
+import NotFound from './NotFound/NotFound.module'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
@@ -26,12 +29,18 @@ function App() {
    
   return (
     <>
-      <Header></Header>
+    <Link to="/" style={{textDecoration:'none',color:'black'}}>
+    <Header></Header>
+    </Link>
+     
       <Options></Options>
-      <div className='allpizzas'>
+      <Routes>
+        <Route path='/' element = {<div className='allpizzas'>
       { isLoading ? [...new Array(8)].map((_,index)=><Skeleton key={index}></Skeleton>) : items.map(pizzasitems => <PizzaBlock key = {pizzasitems.id} name = {pizzasitems.title} price = {pizzasitems.price} types={pizzasitems.types} image = {pizzasitems.imageUrl} sizes={pizzasitems.sizes}></PizzaBlock>)}
-      </div>
-        
+      </div>}>
+        </Route>
+        <Route path='*' element = {<NotFound></NotFound>}></Route>
+      </Routes>
       
       <div className='footer'>
         

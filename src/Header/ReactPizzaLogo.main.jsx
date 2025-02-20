@@ -9,6 +9,7 @@ function Header (){
             <h2 className={styles.pizzalogohead}>REACT PIZZA</h2>
             <h3 className={styles.pizzalogosub}>самая вкусная пицца во вселенной</h3>
         </div>
+        
         <div className={styles.buttonlayout}>
             <button className={styles.headerbutton}>520P
                 <div className={styles.linebutton}></div> 
